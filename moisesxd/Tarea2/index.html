@@ -42,10 +42,8 @@
           }while (num1 >= 0)
           var media = num2/num3;
           alert(media);*/
-        alert
-
-
-        var firstnumber = parseInt(prompt("Digite el primer numero: "));
+    
+        /*var firstnumber = parseInt(prompt("Digite el primer numero: "));
         var secondnumber = parseInt(prompt("Digite el segundo numero: "));
         var i = "";
 
@@ -68,7 +66,36 @@
          
         } else {
             alert("Tiene que ser numeros ");
+        }*/
+
+
+        var firstnumber = parseInt(prompt("Digite un numero:"));
+        var secondnumber = parseInt(prompt("Digite el segundo numero:"));
+
+        if (!isNaN(firstnumber) && !isNaN(secondnumber)){
+            if (firstnumber != secondnumber){
+                if (secondnumber>firstnumber){
+                    for (i = firstnumber + 1 ; i <= secondnumber -1; i++){
+                        if (i%2 != 0){
+                        console.log(i);
+                    }
+                    }
+                }else {
+                    for (i = secondnumber + 1; i<= firstnumber -1; i++){
+                        if (i%2 !=0){
+                        console.log(i);
+                    }
+                    }
+                }
+            }else {
+                alert("Los números no deben ser iguales");
+            }
+        }else {
+            alert("tienen que ser números");
         }
+
+
+
     </script>
 
 </body>
