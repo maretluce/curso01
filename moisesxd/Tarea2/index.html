@@ -11,24 +11,24 @@
 <body>
     <script>
         /*
-                                var num1 = prompt("Escribe el primer numero:");
-                                var num2 = prompt("Escribe el segundo numero:");
-                                
-                                parseInt(num1);
-                                parseInt(num2);
-                           
-                                    if (typeof num1 != 'number' && typeof num2 != 'number'){
-                                        alert("No son numeros");                
-                                    }
-                                    else if (num1==num2){
-                                        alert("Los numeros son iguales");
-                                    }
-                                    else if(num1>num2){
-                                        alert("El primer número ingresado " + num1 + " es mayor que " + num2);
-                                    }else{
-                                        alert("El segundo número ingresado " + num2 + " es mayor que " + num1);
-                                    }
-                        */
+                                                var num1 = prompt("Escribe el primer numero:");
+                                                var num2 = prompt("Escribe el segundo numero:");
+                                                
+                                                parseInt(num1);
+                                                parseInt(num2);
+                                           
+                                                    if (typeof num1 != 'number' && typeof num2 != 'number'){
+                                                        alert("No son numeros");                
+                                                    }
+                                                    else if (num1==num2){
+                                                        alert("Los numeros son iguales");
+                                                    }
+                                                    else if(num1>num2){
+                                                        alert("El primer número ingresado " + num1 + " es mayor que " + num2);
+                                                    }else{
+                                                        alert("El segundo número ingresado " + num2 + " es mayor que " + num1);
+                                                    }
+                                        */
         /*  num1= 0;
           num2 = 0;
           num3= 0;
@@ -42,7 +42,7 @@
           }while (num1 >= 0)
           var media = num2/num3;
           alert(media);*/
-    
+
         /*var firstnumber = parseInt(prompt("Digite el primer numero: "));
         var secondnumber = parseInt(prompt("Digite el segundo numero: "));
         var i = "";
@@ -69,33 +69,43 @@
         }*/
 
 
-        var firstnumber = parseInt(prompt("Digite un numero:"));
-        var secondnumber = parseInt(prompt("Digite el segundo numero:"));
+        /*    var firstnumber = parseInt(prompt("Digite un numero:"));
+            var secondnumber = parseInt(prompt("Digite el segundo numero:"));
 
-        if (!isNaN(firstnumber) && !isNaN(secondnumber)){
-            if (firstnumber != secondnumber){
-                if (secondnumber>firstnumber){
-                    for (i = firstnumber + 1 ; i <= secondnumber -1; i++){
-                        if (i%2 != 0){
-                        console.log(i);
-                    }
+            if (!isNaN(firstnumber) && !isNaN(secondnumber)){
+                if (firstnumber != secondnumber){
+                    if (secondnumber>firstnumber){
+                        for (i = firstnumber + 1 ; i <= secondnumber -1; i++){
+                            if (i%2 != 0){
+                            console.log(i);
+                        }
+                        }
+                    }else {
+                        for (i = secondnumber + 1; i<= firstnumber -1; i++){
+                            if (i%2 !=0){
+                            console.log(i);
+                        }
+                        }
                     }
                 }else {
-                    for (i = secondnumber + 1; i<= firstnumber -1; i++){
-                        if (i%2 !=0){
-                        console.log(i);
-                    }
-                    }
+                    alert("Los números no deben ser iguales");
                 }
             }else {
-                alert("Los números no deben ser iguales");
+                alert("tienen que ser números");
+            }*/
+
+        var number1 = parseInt(prompt("Digite un numero:"));
+        var i;
+
+        if (!isNaN(number1)) {
+                for (i = 1; i <= number1; i++) {
+                    if (number1 % i === 0) {
+                        console.log(i);
+                    }
+                }
+            }else{
+                alert("Por favor escribe un número")
             }
-        }else {
-            alert("tienen que ser números");
-        }
-
-
-
     </script>
 
 </body>
