@@ -11,24 +11,24 @@
 <body>
     <script>
         /*
-                                                var num1 = prompt("Escribe el primer numero:");
-                                                var num2 = prompt("Escribe el segundo numero:");
-                                                
-                                                parseInt(num1);
-                                                parseInt(num2);
-                                           
-                                                    if (typeof num1 != 'number' && typeof num2 != 'number'){
-                                                        alert("No son numeros");                
-                                                    }
-                                                    else if (num1==num2){
-                                                        alert("Los numeros son iguales");
-                                                    }
-                                                    else if(num1>num2){
-                                                        alert("El primer número ingresado " + num1 + " es mayor que " + num2);
-                                                    }else{
-                                                        alert("El segundo número ingresado " + num2 + " es mayor que " + num1);
-                                                    }
-                                        */
+                                                                var num1 = prompt("Escribe el primer numero:");
+                                                                var num2 = prompt("Escribe el segundo numero:");
+                                                                
+                                                                parseInt(num1);
+                                                                parseInt(num2);
+                                                           
+                                                                    if (typeof num1 != 'number' && typeof num2 != 'number'){
+                                                                        alert("No son numeros");                
+                                                                    }
+                                                                    else if (num1==num2){
+                                                                        alert("Los numeros son iguales");
+                                                                    }
+                                                                    else if(num1>num2){
+                                                                        alert("El primer número ingresado " + num1 + " es mayor que " + num2);
+                                                                    }else{
+                                                                        alert("El segundo número ingresado " + num2 + " es mayor que " + num1);
+                                                                    }
+                                                        */
         /*  num1= 0;
           num2 = 0;
           num3= 0;
@@ -94,18 +94,28 @@
                 alert("tienen que ser números");
             }*/
 
-        var number1 = parseInt(prompt("Digite un numero:"));
-        var i;
+        /*    var number1 = parseInt(prompt("Digite un numero:"));
+            var i;
 
-        if (!isNaN(number1)) {
-                for (i = 1; i <= number1; i++) {
-                    if (number1 % i === 0) {
-                        console.log(i);
+            if (!isNaN(number1)) {
+                    for (i = 1; i <= number1; i++) {
+                        if (number1 % i === 0) {
+                            console.log(i);
+                        }
                     }
-                }
-            }else{
-                alert("Por favor escribe un número")
+                }else{
+                    alert("Por favor escribe un número")
+                }*/
+
+
+        var numerone = parseInt(prompt("Introduce un número para imprimir la tambla de multiplicar"));
+
+        if (!isNaN(numerone)) {
+            for (i = 0; i <= 10; i++) {
+                var resultado = numerone * i;
+                console.log(i + "x" + numerone + " = " + resultado);
             }
+        }
     </script>
 
 </body>
